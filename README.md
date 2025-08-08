@@ -2,53 +2,13 @@
 
 Below is a template provided for use when building your README file for students.
 
-# Project Title
+# Fashion Forward Forecasting
 
-Project description goes here.
+StyleSense is known for its trendy and affordable fashion, and its customer base has exploded in recent months. This influx of new customers is fantastic for business, but it has created a challenge: a backlog of product reviews with missing data. Customers are still leaving valuable feedback in the text of their reviews, but they aren't always indicating whether they recommend the product.
 
-## Getting Started
+### The task is to leverage the existing data– those reviews with complete information – to build a predictive model.
 
-Instructions for how to get a copy of the project running on your local machine.
-
-### Dependencies
-
-```
-Examples here
-```
-
-### Installation
-
-Step by step explanation of how to get a dev environment running.
-
-List out the steps
-
-```
-Give an example here
-```
-
-## Testing
-
-Explain the steps needed to run any automated tests
-
-### Break Down Tests
-
-Explain what each test does and why
-
-```
-Examples here
-```
-
-## Project Instructions
-
-This section should contain all the student deliverables for this project.
-
-## Built With
-
-* [Item1](www.item1.com) - Description of item
-* [Item2](www.item2.com) - Description of item
-* [Item3](www.item3.com) - Description of item
-
-Include all items used to build project.
+This model will analyze the text of a review, the customer's age, the product category, and other relevant information to predict whether or not the customer would recommend the product. By automating this process, StyleSense will gain valuable insights into customer satisfaction, identify trending products, and ultimately provide a better shopping experience for their growing customer base.
 
 ## License
 

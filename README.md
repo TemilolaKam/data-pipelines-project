@@ -1,14 +1,86 @@
 # README Template
 
-Below is a template provided for use when building your README file for students.
 
-# Fashion Forward Forecasting
+## Fashion Forward Forecasting
 
-StyleSense is known for its trendy and affordable fashion, and its customer base has exploded in recent months. This influx of new customers is fantastic for business, but it has created a challenge: a backlog of product reviews with missing data. Customers are still leaving valuable feedback in the text of their reviews, but they aren't always indicating whether they recommend the product.
+### Project Overview
 
-### The task is to leverage the existing data– those reviews with complete information – to build a predictive model.
+StyleSense is a booming online women's clothing retailer experiencing exponential growth. As customer reviews pour in, many lack explicit feedback on whether the reviewer recommends the product. However, these reviews often contain valuable textual information that can be mined using NLP.
 
-This model will analyze the text of a review, the customer's age, the product category, and other relevant information to predict whether or not the customer would recommend the product. By automating this process, StyleSense will gain valuable insights into customer satisfaction, identify trending products, and ultimately provide a better shopping experience for their growing customer base.
+This project builds a machine learning pipeline that leverages structured (e.g., age, product category) and unstructured (text reviews) data to predict whether a customer would recommend a product. The end goal is to automate insights from incomplete reviews and help StyleSense stay on the cutting edge of fashion intelligence.
+
+---
+
+### Problem Statement
+
+Due to a rapid increase in customer volume, StyleSense faces a challenge: many product reviews are missing the “recommend” label. Your task is to train a predictive model on the existing complete reviews to infer the missing ones. This enables:
+
+* Better product insights
+* Trend detection
+* Enhanced customer satisfaction analysis
+
+
+
+### Key Features Engineered
+
+* **NLP-derived Features**:
+
+  * TF-IDF vectors from review text
+  
+
+  * Age
+  * Product category
+  * Review length
+
+---
+
+### ML Pipeline Approach
+
+1. **Data Preprocessing**:
+
+   * Handling missing values
+   * Standardizing numerical features (e.g., age)
+   * One-hot encoding for categorical features
+   * Text cleaning (lowercasing, punctuation removal, etc.)
+
+2. **Feature Engineering**:
+
+   * TF-IDF on review text
+   
+
+3. **Modeling**:
+
+   * Trained classifiers: Logistic Regression
+   * Evaluated using ROC-AUC, accuracy, precision, recall, and F1-score
+
+4. **Pipeline Construction**:
+
+   * Used `Pipeline` and `ColumnTransformer` from `sklearn`
+   * Combined numerical, categorical, and text features into a single workflow
+
+5. **Model Evaluation**:
+
+   * ROC Curve
+   * Confusion Matrix
+
+
+### 🛠️ Libraries Used
+
+* `pandas`, `numpy`
+* `scikit-learn`
+* `matplotlib`, `seaborn`
+
+
+
+### 💡 Future Extensions
+
+* Build a **Streamlit dashboard** to accept new reviews and return predictions.
+* Improve text feature representation using transformer models (e.g., BERT).
+* Add customer history and product metadata to enrich features.
+
+
+
+
 
 ## License
 
